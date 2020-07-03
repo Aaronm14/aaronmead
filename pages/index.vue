@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
+  <div>
+    <Header />
+    <div class="container">
       <h1 class="title">
         aaronmead
       </h1>
@@ -37,14 +37,13 @@ export default {}
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
+/* .main-content {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  flex-direction: column;
+} */
 
 .title {
   font-family:

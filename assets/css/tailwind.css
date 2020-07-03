@@ -1,3 +1,15 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/* a {
+  @apply text-blue-500;
+}
+a:hover {
+  @apply text-blue-800;
+} */
+
+/*
+  Split Complementary based on 8A6F63
+  #B0D6BB, #6A8A74, #8A6F63, #85B6D6, #5C778A
+*/
