@@ -10,10 +10,10 @@
       <nav>
         <ul class="flex">
           <li class="mr-6">
-            <a href="/">About</a>
+            <a href="/#about">About</a>
           </li>
           <li class="mr-6">
-            <a href="/">Work</a>
+            <a href="/work">Work</a>
           </li>
           <li>
             <a href="/blog">Blog</a>
