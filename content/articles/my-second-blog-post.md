@@ -1,12 +1,12 @@
 ---
-title: First Blog Post
+title: Second Blog Post
 author: 
     name: Aaron
     bio: Aaron's bio
     image: https://source.unsplash.com/random/?person
 ---
 
-# My first blog post
+# My second blog post
 
 Welcome to my first blog post using content module
 

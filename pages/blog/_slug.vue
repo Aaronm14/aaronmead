@@ -16,16 +16,31 @@
       </ul>
     </nav>
     <pre>Created at: {{ article.createdAt }} </pre>
+
     <nuxt-content :document="article" />
+
+    <author v-if="article.author" :author="article.author" />
+    <prev-next :prev="prev" :next="next" />
   </article>
 </template>
 
 <script>
 export default {
   async asyncData ({ $content, params }) {
+    // Shortcut to view in dev: http://localhost:3000/_content/articles
     const article = await $content('articles', params.slug).fetch()
+    const [prev, next] = await $content('articles')
+      .only(['title', 'slug'])
+      .sortBy('createdAt', 'asc')
+      .surround(params.slug)
+      .fetch()
+    console.log(prev, next)
 
-    return { article }
+    return {
+      article,
+      prev,
+      next
+    }
   }
 }
 </script>
