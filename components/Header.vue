@@ -4,9 +4,6 @@
       <div class="header-left">
         <a href="/">Aaron Mead</a>
       </div>
-      <div class="sloth-container">
-        <img src="/slothemoji.png">
-      </div>
       <nav>
         <ul class="flex">
           <li class="mr-6">
@@ -21,8 +18,27 @@
         </ul>
       </nav>
     </header>
+    <div
+      :class="{'sloth-clicked': slothClicked}"
+      class="sloth-container"
+    >
+      <img
+        src="/slothemoji.png"
+        @click="slothClicked = !slothClicked"
+      >
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      slothClicked: false
+    }
+  }
+}
+</script>
 
 <style scoped>
 /*
@@ -32,6 +48,7 @@
 .header-wrapper {
   background-color: #6A8A74;
   border-bottom: 4px solid #8A6F63;
+  position: relative;
 }
 a {
   @apply text-white text-lg;
@@ -46,12 +63,30 @@ nav a {
 .sloth-container {
   height: 60px;
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 64%);
+  top: 93%;
+  width: 100%;
 }
 /* TODO: rotate sloth image, make it move on click */
 .sloth-container img {
   max-width: 100%;
   max-height: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.sloth-container.sloth-clicked {
+    animation: marquee 10s linear infinite;
+    animation-delay: -5s; /* To start animation halfway through */
+}
+@keyframes marquee {
+    0% {
+        -moz-transform: translateX(calc(-50% - 60px)); /* Must match width of img */
+        -webkit-transform: translateX(calc(-50% - 60px));
+        transform: translateX(calc(-50% - 60px));
+    }
+    100% {
+        -moz-transform: translateX(calc(50% + 60px));
+        -webkit-transform: translateX(calc(50% + 60px));
+        transform: translateX(calc(50% + 60px));
+    }
 }
 </style>
