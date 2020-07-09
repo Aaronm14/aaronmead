@@ -13,3 +13,13 @@ a:hover {
   Split Complementary based on 8A6F63
   #B0D6BB, #6A8A74, #8A6F63, #85B6D6, #5C778A
 */
+
+h1 {
+  @apply text-4xl font-bold
+}
+h2 {
+  @apply text-3xl font-semibold
+}
+h3 {
+  @apply text-2xl font-medium
+}

@@ -24,7 +24,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 /*
   I don't know why but if styles are added into a component
   instead of globally in tailwind.css, it flashes the old styles before rendering

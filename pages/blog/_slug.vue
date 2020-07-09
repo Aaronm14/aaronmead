@@ -1,27 +1,35 @@
 <template>
-  <article>
-    <nav>
-      <ul>
-        <li v-for="link of article.toc" :key="link.id">
-          <NuxtLink
-            :to="`#${link.id}`"
-            :class="{
-              'py-2': link.depth === 2,
-              'ml-2 pb-2': link.depth === 3
-            }"
-          >
-            {{ link.text }}
-          </NuxtLink>
-        </li>
-      </ul>
-    </nav>
-    <pre>Created at: {{ article.createdAt }} </pre>
+  <div>
+    <Header />
+    <div class="container">
+      <article>
+        <nav>
+          <p class="text-sm font-bold">
+            On this page:
+          </p>
+          <ol>
+            <li v-for="link of article.toc" :key="link.id">
+              <NuxtLink
+                :to="`#${link.id}`"
+                :class="{
+                  'py-2': link.depth === 2,
+                  'ml-2 pb-2': link.depth === 3
+                }"
+              >
+                {{ link.text }}
+              </NuxtLink>
+            </li>
+          </ol>
+        </nav>
+        <pre>Created at: {{ article.createdAt }} </pre>
 
-    <nuxt-content :document="article" />
+        <nuxt-content :document="article" />
 
-    <author v-if="article.author" :author="article.author" />
-    <prev-next :prev="prev" :next="next" />
-  </article>
+        <author v-if="article.author" :author="article.author" />
+        <prev-next :prev="prev" :next="next" />
+      </article>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -34,7 +42,6 @@ export default {
       .sortBy('createdAt', 'asc')
       .surround(params.slug)
       .fetch()
-    console.log(prev, next)
 
     return {
       article,
@@ -58,18 +65,6 @@ export default {
   font-weight: normal;
 }
 
-.nuxt-content h1 {
-  font-weight: bold;
-  font-size: 36px;
-}
-.nuxt-content h2 {
-  font-weight: bold;
-  font-size: 28px;
-}
-.nuxt-content h3 {
-  font-weight: bold;
-  font-size: 22px;
-}
 .nuxt-content p {
   margin-bottom: 20px;
 }
