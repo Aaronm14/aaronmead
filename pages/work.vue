@@ -13,8 +13,24 @@
       <!-- Find a format for each experience, maybe biggest takeaway learning from job -->
       <h2>Allstacks</h2>
       <p>Screenshots of the app</p>
-      <p>How I joined, state of the company & codebase at the time</p>
-      <p>Starting as only FE engineer, prioritizing legacy conversions, making decisions with no direct peers</p>
+      <p>
+        Initially I joined Allstacks as a consultant with the offer to join full time if I enjoyed it.  I quickly found enjoying the small team of ~5 full time employees and the culture they created, so joined after just two weeks.
+
+        I had the opportunity to act as the de facto frontend lead, as the other couple engineers were backend focused.  It was a typical Django application that recently started sprinkling in Vue.js on top of the existing jQuery + Bootstrap code.
+
+        Our tool was built for engineering managers and was starting to find some solid traction when I joined.
+      </p>
+      <p>
+        While I had been the only frontend focused engineer before, I was now being entrusted with choosing best practices and responsible for the direction of this piece of the codebase.
+
+        Since this was a startup, I also had to balance the needs of the frontend code with the needs of the business and stakeholders.  This meant I didn't have free reign to just toss all legacy code and slowly rebuild it using modern Vue best practices.
+
+        The strategy we settled on could be boiled down to two main principles: leave it better than where you found it and better to improve it incrementally than not work on it at all.  I am always asked: "what is the incremental approach to this?"
+
+        So instead of refactoring everything in one fell swoop, we'd often wait until tackling a specific feature on a page to upgrade it to "modern Vue."  Specifically this looked like updating Django templates + jQuery or Vue.js injected like jQuery to using single file vue components and APIs where possible to render data.
+
+        This has been a fun challenge for me, especially early on when I was the only dedicated frontend engineer.  It forced me to be decisive rather than deliberate back and forth with a group and rely on them or someone else for the final choice.
+      </p>
       <!--
         Standards to start checking code by
         Accessibility (including semantic html)
