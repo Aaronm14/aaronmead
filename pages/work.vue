@@ -31,6 +31,17 @@
 
         This has been a fun challenge for me, especially early on when I was the only dedicated frontend engineer.  It forced me to be decisive rather than deliberate back and forth with a group and rely on them or someone else for the final choice.
       </p>
+      <p>
+        After being the only FE engineer for about a year, we brough in two FE engineers.  I was able to take the time take inventory of all the practices we wanted to start implementing.  So far, we have successfully added in:
+      </p>
+      <ul>
+        <li><strong>Standard ESLint configs</strong> & linted most of the frontend code.  The incremental approach here was to fix all autofixable problems, then leave it better than we left it as time went</li>
+        <li><strong>A Component Library</strong> - We went with Storybook to document our base components built on top of Vuetify components.  This allows both engineers and designers to at a glance see variations of components like buttons</li>
+        <li><strong>Unit Testing</strong> - We have been gradually improving our unit test coverage using Jest, first on new code, and gradually to older code without tests.  These are mostly for Vue computed properties and methods and Vuex actions and mutations</li>
+        <li><strong>Typescript</strong> - The great thing about Typescript is it can be added incrementally, which is exactly what we've done.  New code gets types where they can be the most beneficial, we aren't concerned about getting to 100% conversion</li>
+        <li><strong>Vuex Style Guide</strong> - My coworker made a great Vuex style guide that we use as a standard for old and new code alike.  We were able to invest the time to shoring up old Vuex code that didn't fit with how we want to approach our stores</li>
+        <li><strong>Performance</strong> - I made some significant strides, though there is a long way to go.  The biggest wins were condensing API calls in some cases, then greatly reducing package sizes by moving shared libraries and finding modern substitutes for packages we used sparingly</li>
+      </ul>
       <!--
         Standards to start checking code by
         Accessibility (including semantic html)
