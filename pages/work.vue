@@ -66,44 +66,45 @@
         SPA
        -->
       <h2>Full Time Independent</h2>
-      <p>Ready for change of pace of heavy hours, how I transitioned freelance work to support</p>
-      <p>Learnings / failures</p>
-      <p>Bball app w/ context and screenshots</p>
-      <p>CM app w/ context/screenshots and publish code to Github</p>
-      <p>How coworking turned into Allstacks</p>
+      <p>The entrepreneurial itch I experienced when I started working on Coffee Crate made its return on top of wanting even more flexibility with my lifestyle.  So, I began gradually making steps to ensure I could get a foundation of consulting work off the ground to pay the bills.  Alluding back to my time working on Cratejoy, I had made some good connections internally on top of doing good work.  So much so that they were referring me clients.  I had niched into this platform and was able to build a steady enough amount of work that I could do consulting work part time and not make terribly worse money than I was making full time.  The goal was to roughly split my time trying to build my own products that could eventually replace my consulting income.</p>
+      <p>Does that last sentence sound familiar?  Its because nearly every engineer has the same thought process.  Ironically, when meeting folks in the area I could learn from, my future employer told me they were in my shoes and ultimately discovered they ended up not doing either thing well.  My experience didn't prove to be too different.  I was stressed because I couldn't devote the time my projects deserved.  To make matters worse I was exploring two products at once.</p>
+      <p>Luckily the learnings I mentioned at Kadro really proved to be fruitful here.  I never had any major issues on any client projects, I avoided any major scope creep and almost every project turned out profitable even after factoring non-billable time spent.</p>
+      <p>Here was what most of my time was spent on:</p>
+      <ul>
+        <li>My first product focused project was partnering with a company that was exploring building an ancillary tool they didn't have time to build themselves.  It was my first foray into Angular X and Typescript, which I found to be really helpful after the initial learning curve.</li>
+        <li>At the same time, I was working with a friend on a tool for college campus ministers to broadcast text messages to their students.  It worked really well, and was used on a regular basis for a couple years by someone at a state university here.  The coolest part about the app was that it was all severless.  We leveraged Firebase and Google Cloud Functions to keep the costs at virtually 0.  The most expensive piece was certainly sending SMS, but <a href="https://www.bandwidth.com/messaging/">Bandwidth SMS</a> gradually turned into a more enterprise focused app as they IPO'd.  This project ultimately hit a point where we couldn't achieve multi-tenancy without starting over on a few things, and as the project wasn't my full focus, it just stayed in a limbo state.</li>
+        <li>Consulting wise, Cratejoy websites and integrations were my bread and butter, but the most fun work was a few projects I had with local startups, one of which <a href="https://github.com/acunniffe/optic-vscode-plugin" target="_blank">open sourced my work</a> and later got into Y Combinator!  Additionally one of the startups I worked with for two weeks ended up convincing me to join them full time.</li>
+      </ul>
 
       <h2>K4Connect</h2>
-      <p>How I found out about the company, joining when there were only 4 other FTEs (and Scott being out)</p>
-      <p>Why I left last job, my experience leading up to this (MEAN stack on side was it)</p>
-      <p>My work first year or two, having no other engineers besides CTO to ask questions</p>
-      <p>Projects + screenshots + learnings for each</p>
+      <p>Knowing that I may want to start my own company or join a startup one day, I stayed involved with the tech ecosystem in my area.  I had heard K4Connect's CEO had previously taken his previous company public before selling to Apple, and who's technology would become the fingerprint scanner on the iPhone.  This felt like a big deal for a medium sized city.  I later went to a node.js meetup where the CTO was giving a talk where I honestly felt like the content was over my head.  But I got to meet some of the team and turned out they had an opening for a full stack engineer.  Luckily for me, the CTO recognized my experience working on side projects and entrepreneurial spirit and ultimately gave me the opportunity to join the company.</p>
+      <p>To say that it was like drinking through a firehouse would be an understatement starting out here, and I was on a roller coaster of feeling like I could never figure out certain problems and just having a flat out blast.  The early days especially were an incredible experience getting to work in the downtown office, initially with just 4 other full time employees.</p>
+      <p>Up until this point I pretty much only done real backend or javascript framework programming on the side, and I certainly had no experience interfacing with Bluetooth and Z-Wave hardware.  The only other full time engineer was the CTO, and he was spending less and less time writing code.  Learning in that environment certainly had its pros and cons, but the pros far outweighed the cons.  I was learning <em>a ton</em> and having fun while I was doing it, other than the frequent feelings of being a fraud.</p>
+      <p>During my 3 years at K4Connect, we grew to ~40 some full time employees, and I worked on all sorts of projects:</p>
       <ul>
-        <li>Enyo.js app</li>
-        <li>Learning about bluetooth, zwave, etc. (tested various devices, some very low level stuff)</li>
-        <li>Building on structure from CTO for MEAN stack app (dashboard)</li>
-        <li>Building operations tool prototype (stunk, rebuilt with angular 1.6, which then was rebuilt with ext.js)</li>
-        <li>Resident app 2.0 with angular (built features that were whole standalone biz like video chat, events, msging)</li>
+        <li><strong>Enyo.js</strong> When I first joined, the first version of the resident-facing app was built on Enyo.js.</li>
+        <li>Our controller that interfaced with the hardware we installed was written mostly in node.js to build bridges for bluetooth, zwave, etc.</li>
+        <li><strong>MongoDB, Angular.js, and Node.js</strong>Our early versions of a dashboard application was built using the MEAN stack including socket.io for some real time features.</li>
+        <li>Our aesident app was later rebuilt Angular.js and a slew of other technologies.  We had single features that were whole businesses at other companies.  Photo libraries, real time video chat, event management, messaging, smart home controls, and more.</li>
       </ul>
-      <p>Quitting in good faith with long notice, being offered to stick around with changes</p>
-      <p>Learnings from being in a testing role</p>
+      <p>The long hours on top of being married to someone working night shift gradually burned me out.  I had initially quit with several months notice so the company had ample time to find a replacement, with the goal being to find do freelance work to pay the bills.  Fortunately they worked with me to let me move to a less critical role and do some development and some testing, in exchange for working less hours and have some remote flexibility.</p>
 
       <h2>Coffee Crate</h2>
-      <p>Working with friends, how idea happened</p>
-      <p>Managing time working on this on the side</p>
-      <p>Stories of appearing in news, no website visitors, selling biz</p>
-      <p>Getting to know CJ team leading to freelancing work and value of doing good work</p>
+      <p>I had originally learned how to code so I could start a tech company.  As my learning gradually plateued, the entrepreneurial itch kicked in and I started a coffee subscription box with a couple of friends during nights and weekends.  I learned building a business with your friends is one of the most fun things you can do.</p>
+      <p>Looking back, I'm still not entirely sure how I made the time for it other than it was my full focus outside of my day job and social life.  It was a fun challenge that proved hard work isn't nearly as hard when that work is also fun.</p>
+      <p>Eventually my next job opportunity felt too good to pass on, and with the extra hours that came long with it, we decided to sell the business 10 months in.  It was bittersweet, but the right move in retrospect.</p>
+      <p>Throughout this time I was thinking about stories of early platform adopters because we leveraged a new subscription box platform called Cratejoy while it was in beta to quickly start a profitable business.  I made sure to do good work on the platform and be helpful to the Cratejoy team while we benefited from their tool.  This proved to be a good move in a few years... </p>
 
       <h2>Kadro</h2>
-      <p>Starting off in support, first job</p>
-      <p>Custom ecommerce platform, writing html in the system</p>
-      <p>Early responsive dev, supporting back to IE7</p>
-      <p>Magento, learning JS, having to take on bad projects, learning value of profit / scope creep</p>
-      <p>Culture of company amazing, but not scratching itch to learn more tech or focus on a product</p>
+      <p>Each job I've gotten has been a big step forward in my career in some way or another, but perhaps this was the biggest one.  I was getting paid to write code full time, and I was learning the ins and outs of technical consulting.  It was one of the best cultures I've been a part of to boot, which was especially important as I had just gotten married.</p>
+      <p>My first role here was doing technical support on a proprietary ecommerce platform.  It mostly involved writing a lot of SQL queries to update data or fix orders.  Perhaps even more importantly it gave me a lot of experience working directly with our customers.</p>
+      <p>As time went on my role evolved into being the only fully focused frontend developer.  I churned through a lot of PSD designs, converting them to responsive HTML/CSS back when mobile traffic was still sub 10% on most websites.  Oh and it had to work on IE7...</p>
+      <p>During that time I along with a few others in the company began focusing on Magento projects and I earned one of the early Magento Frontend certifications.  It was here that I got more experience with PHP, unix, and more advanced Javascript.</p>
+      <p>Perhaps even more important than the technical learnings was getting a peak behind the curtains at the business side of things.  Developers at Kadro fortunately got to be hands on in scoping out projects and seeing how profitable they were.  This surely had tens of thousands of dollars worth of value to me as I took on freelancing and consulting later on.</p>
 
       <h2>Orasi</h2>
-      <p>Fast growth, then slowing down</p>
-      <p>Ended up being great the work was mind numbingly boring, huge desire to learn to code</p>
-      <p>But got professional experience, mainly took because relationship getting more serious</p>
+      <!-- <p>My first full time job out of college was making $11/hr on a 6 month contract-to-hire gig doing manual software testing.  Orasi was hiring a lot of recent college grads, there was a new cohort coming in every week for a time.  They had stereotypical office goodies: open office floor plan, nerf gun fights, snacks in the kitchen and a Wii.  I later realized the "perks" and promise of an eventual $80k+ salary just mostly a ploy to convince impressionable and eager recent grads to do mind numbing work.  On the plus side, disliking your job is great fuel for picking up new skills</p> -->
+      <p>My first full time job out of school was making $11/hr at an over-ambitious software testing company that was initially growing like hot cakes, only to realize they bit off more than they could chew.  The main benefits here were simply getting experience on my resume and doing mind numbingly boring work.  The latter is actually great fuel for learning new skills on the side.  This is where I got more serious about focusing on programming since it was all I wanted to do while I was manually testing apps made by Disney.</p>
 
       <h2>Coaching?</h2>
 
@@ -132,6 +133,10 @@ export default {}
   justify-content: center;
   flex-direction: column;
 } */
+
+p {
+  @apply mb-4
+}
 
 .title {
   font-family:
