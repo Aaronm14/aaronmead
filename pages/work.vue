@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <div class="container">
+    <div class="container my-work-container">
       <h1 class="title">
         My Work
       </h1>
@@ -89,7 +89,9 @@
       </ul>
       <p>The long hours on top of being married to someone working night shift gradually burned me out.  I had initially quit with several months notice so the company had ample time to find a replacement, with the goal being to find do freelance work to pay the bills.  Fortunately they worked with me to let me move to a less critical role and do some development and some testing, in exchange for working less hours and have some remote flexibility.</p>
 
-      <h2>Coffee Crate</h2>
+      <h2>
+        <a href="https://web.archive.org/web/20170710234105/http://www.coffeecrate.co/" target="blank">Coffee Crate</a>
+      </h2>
       <p>I had originally learned how to code so I could start a tech company.  As my learning gradually plateued, the entrepreneurial itch kicked in and I started a coffee subscription box with a couple of friends during nights and weekends.  I learned building a business with your friends is one of the most fun things you can do.</p>
       <p>Looking back, I'm still not entirely sure how I made the time for it other than it was my full focus outside of my day job and social life.  It was a fun challenge that proved hard work isn't nearly as hard when that work is also fun.</p>
       <p>Eventually my next job opportunity felt too good to pass on, and with the extra hours that came long with it, we decided to sell the business 10 months in.  It was bittersweet, but the right move in retrospect.</p>
@@ -106,12 +108,12 @@
       <!-- <p>My first full time job out of college was making $11/hr on a 6 month contract-to-hire gig doing manual software testing.  Orasi was hiring a lot of recent college grads, there was a new cohort coming in every week for a time.  They had stereotypical office goodies: open office floor plan, nerf gun fights, snacks in the kitchen and a Wii.  I later realized the "perks" and promise of an eventual $80k+ salary just mostly a ploy to convince impressionable and eager recent grads to do mind numbing work.  On the plus side, disliking your job is great fuel for picking up new skills</p> -->
       <p>My first full time job out of school was making $11/hr at an over-ambitious software testing company that was initially growing like hot cakes, only to realize they bit off more than they could chew.  The main benefits here were simply getting experience on my resume and doing mind numbingly boring work.  The latter is actually great fuel for learning new skills on the side.  This is where I got more serious about focusing on programming since it was all I wanted to do while I was manually testing apps made by Disney.</p>
 
-      <h2>Coaching?</h2>
+      <!-- <h2>Coaching?</h2>
 
       <h2>If timeline is h2, then this h2 could be general career learnings, side projects etc</h2>
 
       <h2>Career principles?</h2>
-      <p>Balance (work/life, new features/refactor, learning new tools etc), always do your best work & take ownership, be T shaped, follow the founders</p>
+      <p>Balance (work/life, new features/refactor, learning new tools etc), always do your best work & take ownership, be T shaped, follow the founders</p> -->
     </div>
   </div>
 </template>
@@ -136,6 +138,9 @@ export default {}
 
 p {
   @apply mb-4
+}
+.my-work-container a {
+  @apply underline
 }
 
 .title {
