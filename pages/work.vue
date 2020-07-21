@@ -90,7 +90,7 @@
       <p>The long hours on top of being married to someone working night shift gradually burned me out.  I had initially quit with several months notice so the company had ample time to find a replacement, with the goal being to find do freelance work to pay the bills.  Fortunately they worked with me to let me move to a less critical role and do some development and some testing, in exchange for working less hours and have some remote flexibility.</p>
 
       <h2>
-        <a href="https://web.archive.org/web/20170710234105/http://www.coffeecrate.co/" target="blank">Coffee Crate</a>
+        <a href="https://web.archive.org/web/20150716073316/http://www.coffeecrate.co/" target="blank">Coffee Crate</a>
       </h2>
       <p>I had originally learned how to code so I could start a tech company.  As my learning gradually plateued, the entrepreneurial itch kicked in and I started a coffee subscription box with a couple of friends during nights and weekends.  I learned building a business with your friends is one of the most fun things you can do.</p>
       <p>Looking back, I'm still not entirely sure how I made the time for it other than it was my full focus outside of my day job and social life.  It was a fun challenge that proved hard work isn't nearly as hard when that work is also fun.</p>

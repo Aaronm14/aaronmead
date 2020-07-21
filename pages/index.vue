@@ -7,18 +7,18 @@
       </h1>
       <div class="links">
         <a
-          href="https://nuxtjs.org/"
+          href="https://www.linkedin.com/in/meadam/"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--green"
+          class="btn button-blue"
         >
-          Documentation
+          LinkedIn
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/aaronm14"
           target="_blank"
           rel="noopener noreferrer"
-          class="button--grey"
+          class="btn button-gray"
         >
           GitHub
         </a>
@@ -73,5 +73,21 @@ export default {}
 
 .links {
   padding-top: 15px;
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+.button-blue {
+  @apply bg-blue-500 text-white;
+}
+.button-blue:hover {
+  @apply bg-blue-700;
+}
+.button-gray {
+  @apply bg-gray-500 text-white;
+}
+.button-gray:hover {
+  @apply bg-gray-700;
 }
 </style>
