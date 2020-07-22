@@ -1,18 +1,39 @@
 <template>
   <div>
     <Header />
-    <div class="container">
-      <h1 class="title">
-        aaronmead
+    <div class="container max-w-screen-lg mt-12">
+      <h1 class="title text-5xl text-center mb-2">
+        Hi, I'm Aaron Mead
       </h1>
-      <div class="links">
+      <div class="intro-container flex">
+        <div class="max-w-md pr-4 md:w-1/1 lg:w-1/2">
+          <p>
+            I'm a senior software engineer based in North Carolina.
+            I've spent most of my career in the tech industry, largely working at startups.
+            Javascript is fun to hate on, but I enjoy writing it and has been a big part of my livelihood for 8 years now.
+            Lately I've been working on frontend architecture, specifically with an enterprise Vue.js application.
+          </p>
+        </div>
+        <div class="max-w-md pl-4 md:w-1/1 lg:w-1/2">
+          <p>
+            When I'm not writing code or working on a side-project, I typically spend my time:
+            <ul class="bulleted">
+              <li>With my family and friends.</li>
+              <li>Being a homebody.</li>
+              <li>Watching and consuming content about anything basketball (especially NBA!)</li>
+              <li>When I'm not focusing on a project, binge playing some video games (especially <a href="https://na.leagueoflegends.com/en-us/" target="_blank">LEAGUE!</a>)</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="social-links flex items-center justify-start">
         <a
           href="https://www.linkedin.com/in/meadam/"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn button-blue"
+          class="btn button-blue mr-1"
         >
-          LinkedIn
+          <span class="fa fa-linkedin" /> LinkedIn
         </a>
         <a
           href="https://github.com/aaronm14"
@@ -20,7 +41,7 @@
           rel="noopener noreferrer"
           class="btn button-gray"
         >
-          GitHub
+          <span class="fa fa-github" /> GitHub
         </a>
       </div>
     </div>
@@ -57,22 +78,17 @@ export default {}
     Arial,
     sans-serif;
   display: block;
-  font-weight: 300;
-  font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+ul.bulleted li:before {
+  content: "•";
+  padding-right: 2px;
 }
 
-.links {
-  padding-top: 15px;
+.social-links {
+  margin-top: 15px;
 }
 
 .btn {
