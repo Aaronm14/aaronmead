@@ -1,6 +1,6 @@
 <template>
   <div class="header-wrapper flex justify-center py-5 mb-4">
-    <header class="container flex justify-between">
+    <header class="container max-w-screen-lg flex justify-between">
       <div class="header-left">
         <a href="/">Aaron Mead</a>
       </div>

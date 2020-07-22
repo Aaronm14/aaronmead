@@ -6,7 +6,7 @@
         Hi, I'm Aaron Mead
       </h1>
       <div class="intro-container flex">
-        <div class="max-w-md pr-4 md:w-1/1 lg:w-1/2">
+        <div class="pr-4 md:w-1/1 lg:w-1/2">
           <p>
             I'm a senior software engineer based in North Carolina.
             I've spent most of my career in the tech industry, largely working at startups.
@@ -14,7 +14,7 @@
             Lately I've been working on frontend architecture, specifically with an enterprise Vue.js application.
           </p>
         </div>
-        <div class="max-w-md pl-4 md:w-1/1 lg:w-1/2">
+        <div class="pl-4 md:w-1/1 lg:w-1/2">
           <p>
             When I'm not writing code or working on a side-project, I typically spend my time:
             <ul class="bulleted">
