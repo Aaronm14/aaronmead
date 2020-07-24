@@ -13,7 +13,11 @@
       <!-- Find a format for each experience, maybe biggest takeaway learning from job -->
       <article>
         <h2>Allstacks</h2>
+        <p>
+          Initially I joined Allstacks as a consultant, I quickly found enjoying the small team of ~5 full time employees and the culture they created, so joined full time after just two weeks.
 
+          The codebase was a Django app that recently started sprinkling in Vue.js, so I led efforts to gradually convert the frontend to modern Vue best practices.
+        </p>
         <div class="job-content flex flex-wrap">
           <div class="job-content-images w-full md:pr-2 md:w-1/3">
             <div
@@ -23,30 +27,14 @@
           </div>
           <div class="job-content-text w-full md:pl-2 md:w-2/3">
             <p>
-              Initially I joined Allstacks as a consultant with the offer to join full time if I enjoyed it.  I quickly found enjoying the small team of ~5 full time employees and the culture they created, so joined after just two weeks.
-
-              I had the opportunity to act as the de facto frontend lead, as the other couple engineers were backend focused.  It was a typical Django application that recently started sprinkling in Vue.js on top of the existing jQuery + Bootstrap code.
-
-              Our tool was built for engineering managers and was starting to find some solid traction when I joined.
-            </p>
-            <p>
-              While I had been the only frontend focused engineer before, I was now being entrusted with choosing best practices and responsible for the direction of this piece of the codebase.
-
-              Since this was a startup, I also had to balance the needs of the frontend code with the needs of the business and stakeholders.  This meant I didn't have free reign to just toss all legacy code and slowly rebuild it using modern Vue best practices.
-
-              The strategy we settled on could be boiled down to two main principles: leave it better than where you found it and better to improve it incrementally than not work on it at all.  I am always asked: "what is the incremental approach to this?"
-
-              So instead of refactoring everything in one fell swoop, we'd often wait until tackling a specific feature on a page to upgrade it to "modern Vue."  Specifically this looked like updating Django templates + jQuery or Vue.js injected like jQuery to using single file vue components and APIs where possible to render data.
-
-              This has been a fun challenge for me, especially early on when I was the only dedicated frontend engineer.  It forced me to be decisive rather than deliberate back and forth with a group and rely on them or someone else for the final choice.
-            </p>
-            <p>
-              After being the only FE engineer for about a year, we brough in two FE engineers.  I was able to take the time take inventory of all the practices we wanted to start implementing.  So far, we have successfully added in:
+              After being the only FE engineer for about a year, we brought in two FE engineers.  Around that time I was able to take the time take inventory of best practices already implemented and where we still needed to be.  So far, we have successfully used an incremental improvement strategy to implement:
             </p>
             <ul>
-              <li><strong>Standard ESLint configs</strong> & linted most of the frontend code.  The incremental approach here was to fix all autofixable problems, then leave it better than we left it as time went</li>
-              <li><strong>A Component Library</strong> - We went with Storybook to document our base components built on top of Vuetify components.  This allows both engineers and designers to at a glance see variations of components like buttons</li>
+              <li><strong>Single File Vue Components</strong>: Most existing code, and all new code is compiled via webpack so we can leverage SFCs.</li>
+              <li><strong>Standard ESLint configs</strong>: We fixed all autofixable problems, and now practice the "leave it better than we found it" for everything else.</li>
+              <li><strong>A Component Library</strong>: We went with Storybook to document our base components built on top of Vuetify components.  This allows both engineers and designers to at a glance see variations of components like buttons</li>
               <li><strong>Unit Testing</strong> - We have been gradually improving our unit test coverage using Jest, first on new code, and gradually to older code without tests.  These are mostly for Vue computed properties and methods and Vuex actions and mutations</li>
+              <li><strong>Cypress</strong></li>
               <li><strong>Typescript</strong> - The great thing about Typescript is it can be added incrementally, which is exactly what we've done.  New code gets types where they can be the most beneficial, we aren't concerned about getting to 100% conversion</li>
               <li><strong>Vuex Style Guide</strong> - My coworker made a great Vuex style guide that we use as a standard for old and new code alike.  We were able to invest the time to shoring up old Vuex code that didn't fit with how we want to approach our stores</li>
               <li><strong>Performance</strong> - I made some significant strides, though there is a long way to go.  The biggest wins were condensing API calls in some cases, then greatly reducing package sizes by moving shared libraries and finding modern substitutes for packages we used sparingly</li>
