@@ -30,14 +30,14 @@
               After being the only FE engineer for about a year, we brought in two FE engineers.  Around that time I was able to take the time take inventory of best practices already implemented and where we still needed to be.  So far, we have successfully used an incremental improvement strategy to implement:
             </p>
             <ul>
-              <li><strong>Single File Vue Components</strong>: Most existing code, and all new code is compiled via webpack so we can leverage SFCs.</li>
-              <li><strong>Standard ESLint configs</strong>: We fixed all autofixable problems, and now practice the "leave it better than we found it" for everything else.</li>
-              <li><strong>A Component Library</strong>: We went with Storybook to document our base components built on top of Vuetify components.  This allows both engineers and designers to at a glance see variations of components like buttons</li>
-              <li><strong>Unit Testing</strong> - We have been gradually improving our unit test coverage using Jest, first on new code, and gradually to older code without tests.  These are mostly for Vue computed properties and methods and Vuex actions and mutations</li>
-              <li><strong>Cypress</strong></li>
-              <li><strong>Typescript</strong> - The great thing about Typescript is it can be added incrementally, which is exactly what we've done.  New code gets types where they can be the most beneficial, we aren't concerned about getting to 100% conversion</li>
-              <li><strong>Vuex Style Guide</strong> - My coworker made a great Vuex style guide that we use as a standard for old and new code alike.  We were able to invest the time to shoring up old Vuex code that didn't fit with how we want to approach our stores</li>
-              <li><strong>Performance</strong> - I made some significant strides, though there is a long way to go.  The biggest wins were condensing API calls in some cases, then greatly reducing package sizes by moving shared libraries and finding modern substitutes for packages we used sparingly</li>
+              <li><strong>Single File Vue Components:</strong> Most existing code, and all new code is compiled via webpack so we can leverage SFCs.</li>
+              <li><strong>Standard ESLint configs:</strong> All autofixable problems were fixed, and now practice the "leave it better than we found it" for everything else.</li>
+              <li><strong>A Component Library:</strong> Storybook to document our base components built on top of Vuetify components.</li>
+              <li><strong>Unit Testing:</strong> Gradually adding Jest unit tests, first on new code, and gradually to older code without tests.</li>
+              <li><strong>Cypress:</strong> Got Cypress running against our Django-templated app, with a goal of replacing flaky Selenium tests.</li>
+              <li><strong>Typescript:</strong> New code gets types where they can be the most beneficial, but we aren't concerned about getting to 100% conversion.</li>
+              <li><strong>Vuex Standards:</strong> Shored up old Vuex code that didn't fit with how we want to approach our stores, and created standards for building new ones.</li>
+              <li><strong>Performance:</strong> The biggest wins were condensing API calls in some cases, then gradually reducing package sizes with better 3rd party library management.</li>
             </ul>
             <!--
               Standards to start checking code by
