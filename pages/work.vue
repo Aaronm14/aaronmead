@@ -11,60 +11,56 @@
         In the style of https://nbadraft.theringer.com/ (Skim Peruse Deep Dive)
       </p>
       <!-- Find a format for each experience, maybe biggest takeaway learning from job -->
-      <article>
-        <h2>Allstacks</h2>
-        <p>
-          Initially I joined Allstacks as a consultant, I quickly found enjoying the small team of ~5 full time employees and the culture they created, so joined full time after just two weeks.
+      <work-item
+        :screenshot="imagePaths.allstacks"
+        title="Allstacks"
+      >
+        <template v-slot:intro>
+          <p>
+            Initially I joined Allstacks as a consultant, I quickly found enjoying the small team of ~5 full time employees and the culture they created, so joined full time after just two weeks.
 
-          The codebase was a Django app that recently started sprinkling in Vue.js, so I led efforts to gradually convert the frontend to modern Vue best practices.
-        </p>
-        <div class="job-content flex flex-wrap">
-          <div class="job-content-images w-full md:pr-2 md:w-1/3">
-            <div
-              :style="{'background-image': `url(${imagePaths.allstacks})`}"
-              class="portfolio-img-container"
-            />
-          </div>
-          <div class="job-content-text w-full md:pl-2 md:w-2/3">
-            <p>
-              After being the only FE engineer for about a year, we brought in two FE engineers.  Around that time I was able to take the time take inventory of best practices already implemented and where we still needed to be.  So far, we have successfully used an incremental improvement strategy to implement:
-            </p>
-            <ul>
-              <li><strong>Single File Vue Components:</strong> Most existing code, and all new code is compiled via webpack so we can leverage SFCs.</li>
-              <li><strong>Standard ESLint configs:</strong> All autofixable problems were fixed, and now practice the "leave it better than we found it" for everything else.</li>
-              <li><strong>A Component Library:</strong> Storybook to document our base components built on top of Vuetify components.</li>
-              <li><strong>Unit Testing:</strong> Gradually adding Jest unit tests, first on new code, and gradually to older code without tests.</li>
-              <li><strong>Cypress:</strong> Got Cypress running against our Django-templated app, with a goal of replacing flaky Selenium tests.</li>
-              <li><strong>Typescript:</strong> New code gets types where they can be the most beneficial, but we aren't concerned about getting to 100% conversion.</li>
-              <li><strong>Vuex Standards:</strong> Shored up old Vuex code that didn't fit with how we want to approach our stores, and created standards for building new ones.</li>
-              <li><strong>Performance:</strong> The biggest wins were condensing API calls in some cases, then gradually reducing package sizes with better 3rd party library management.</li>
-            </ul>
-            <!--
-              Standards to start checking code by
-              Accessibility (including semantic html)
-              Minimum responsiveness level (TBD)
-              Allstacks component consistencies / styleguide
-              Adding typescript as we go (whatever reqs we come up with)
-            -->
-            <!--
-              When we hired 2nd FE engineer, I/we came up with this list
-              // show which ones we've done, each could have a paragraph
-              // with how we went about it and how helpeful its been
-              Linting
-              Component Library
-              Testing
-              SPA
-              Typescript
-              Vuex
-              Performance - API calls & Bundle size reduction
-              Responsive
-              Rip out bootstrap
-              Error Reporting / Handling
-              SPA
-            -->
-          </div>
-        </div>
-      </article>
+            The codebase was a Django app that recently started sprinkling in Vue.js, so I led efforts to gradually convert the frontend to modern Vue best practices.
+          </p>
+          <p>
+            After being the only FE engineer for about a year, we brought in two FE engineers.  Around that time I was able to take the time take inventory of best practices already implemented and where we still needed to be.  So far, we have successfully used an incremental improvement strategy to implement:
+          </p>
+        </template>
+        <template v-slot:description>
+          <ul>
+            <li><strong>Single File Vue Components:</strong> Most existing code, and all new code is compiled via webpack so we can leverage SFCs.</li>
+            <li><strong>Standard ESLint configs:</strong> All autofixable problems were fixed, and now practice the "leave it better than we found it" for everything else.</li>
+            <li><strong>A Component Library:</strong> Storybook to document our base components built on top of Vuetify components.</li>
+            <li><strong>Unit Testing:</strong> Gradually adding Jest unit tests, first on new code, and gradually to older code without tests.</li>
+            <li><strong>Cypress:</strong> Got Cypress running against our Django-templated app, with a goal of replacing flaky Selenium tests.</li>
+            <li><strong>Typescript:</strong> New code gets types where they can be the most beneficial, but we aren't concerned about getting to 100% conversion.</li>
+            <li><strong>Vuex Standards:</strong> Shored up old Vuex code that didn't fit with how we want to approach our stores, and created standards for building new ones.</li>
+            <li><strong>Performance:</strong> The biggest wins were condensing API calls in some cases, then gradually reducing package sizes with better 3rd party library management.</li>
+          </ul>
+          <!--
+            Standards to start checking code by
+            Accessibility (including semantic html)
+            Minimum responsiveness level (TBD)
+            Allstacks component consistencies / styleguide
+            Adding typescript as we go (whatever reqs we come up with)
+          -->
+          <!--
+            When we hired 2nd FE engineer, I/we came up with this list
+            // show which ones we've done, each could have a paragraph
+            // with how we went about it and how helpeful its been
+            Linting
+            Component Library
+            Testing
+            SPA
+            Typescript
+            Vuex
+            Performance - API calls & Bundle size reduction
+            Responsive
+            Rip out bootstrap
+            Error Reporting / Handling
+            SPA
+          -->
+        </template>
+      </work-item>
       <h2>Full Time Independent</h2>
       <p>The entrepreneurial itch I experienced when I started working on Coffee Crate made its return on top of wanting even more flexibility with my lifestyle.  So, I began gradually making steps to ensure I could get a foundation of consulting work off the ground to pay the bills.  Alluding back to my time working on Cratejoy, I had made some good connections internally on top of doing good work.  So much so that they were referring me clients.  I had niched into this platform and was able to build a steady enough amount of work that I could do consulting work part time and not make terribly worse money than I was making full time.  The goal was to roughly split my time trying to build my own products that could eventually replace my consulting income.</p>
       <p>Does that last sentence sound familiar?  Its because nearly every engineer has the same thought process.  Ironically, when meeting folks in the area I could learn from, my future employer told me they were in my shoes and ultimately discovered they ended up not doing either thing well.  My experience didn't prove to be too different.  I was stressed because I couldn't devote the time my projects deserved.  To make matters worse I was exploring two products at once.</p>
