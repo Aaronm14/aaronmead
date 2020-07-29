@@ -82,11 +82,6 @@ export default {}
   letter-spacing: 1px;
 }
 
-ul.bulleted li:before {
-  content: "•";
-  padding-right: 2px;
-}
-
 .social-links {
   margin-top: 15px;
 }

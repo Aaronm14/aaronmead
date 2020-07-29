@@ -23,3 +23,8 @@ h2 {
 h3 {
   @apply text-2xl font-medium
 }
+
+.bulleted li:before {
+  content: "•";
+  padding-right: 4px;
+}
