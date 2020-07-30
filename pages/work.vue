@@ -5,12 +5,6 @@
       <h1 class="title">
         My Work
       </h1>
-      <p>Visualize in a timeline? Asc or Desc order?</p>
-      <p>
-        Maybe each heading could be a dropdown or toggle with a tdlr;
-        In the style of https://nbadraft.theringer.com/ (Skim Peruse Deep Dive)
-      </p>
-      <!-- Find a format for each experience, maybe biggest takeaway learning from job -->
       <work-item
         :screenshot="imagePaths.allstacks"
         title="Allstacks"
@@ -89,7 +83,7 @@
           <p>During my 3 years at K4Connect, we grew from 5 to ~40 some full time employees. I was learning <em>a ton</em> and having fun while I was doing it. I worked on all sorts of projects and technologies:</p>
         </template>
         <template v-slot:description>
-          <ul class="bulleted">
+          <ul>
             <li><strong>Enyo.js:</strong> When I first joined, the first version of the resident-facing app was built on Enyo.js.  Luckily we re-wrote it in Angular not long after I joined.</li>
             <li><strong>MongoDB, Angular.js, and Node.js:</strong> Early versions of a dashboard application were built using the MEAN stack, including socket.io for real time features.</li>
             <li><strong>IoT:</strong> Our controller that interfaced with the hardware we installed used in node.js bridges for devices using bluetooth, zwave, etc.</li>
@@ -120,7 +114,7 @@
           <p>Perhaps even more important than the technical learnings was getting a peak behind the curtains at the business side of things.  Developers at Kadro fortunately got to be hands on in scoping out projects and seeing how profitable they were.</p>
         </template>
         <template v-slot:description>
-          <ul class="bulleted">
+          <ul>
             <li><strong>SQL:</strong> My first role here was doing technical support on a proprietary ecommerce platform.  I wrote a lot of SQL queries to update data or fix orders for clients.</li>
             <li><strong>Web Development:</strong> Later I became the only fully focused frontend developer.  I churned through a lot of PSD designs, converting them to responsive HTML/CSS back when mobile traffic was still sub 10% on most websites.  Oh and sites had to work on IE7...</li>
             <li><strong>Magento:</strong> Along with just a couple others, I began focusing on Magento projects and earned one of the early Magento Frontend certifications.  I also got more experience with PHP, unix, and more advanced Javascript.</li>
@@ -138,13 +132,8 @@
           <p>This is where I got more serious about focusing on programming since it was all I wanted to do while I was manually testing apps made by Disney.</p>
         </template>
       </work-item>
-
-      <!-- <h2>Coaching?</h2>
-
-      <h2>If timeline is h2, then this h2 could be general career learnings, side projects etc</h2>
-
-      <h2>Career principles?</h2>
-      <p>Balance (work/life, new features/refactor, learning new tools etc), always do your best work & take ownership, be T shaped, follow the founders</p> -->
+      <!-- <h2>Career principles?</h2>
+      <p>Balance (work/life, new features/refactor, learning new tools etc), always do your best work & take ownership, be T shaped, follow the founders</p> --> -->
     </div>
   </div>
 </template>
