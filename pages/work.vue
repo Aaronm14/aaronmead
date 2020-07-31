@@ -132,8 +132,10 @@
           <p>This is where I got more serious about focusing on programming since it was all I wanted to do while I was manually testing apps made by Disney.</p>
         </template>
       </work-item>
-      <!-- <h2>Career principles?</h2>
-      <p>Balance (work/life, new features/refactor, learning new tools etc), always do your best work & take ownership, be T shaped, follow the founders</p> --> -->
+      <!--
+        <h2>Career principles?</h2>
+        <p>Balance (work/life, new features/refactor, learning new tools etc), always do your best work & take ownership, be T shaped, follow the founders</p>
+      -->
     </div>
   </div>
 </template>

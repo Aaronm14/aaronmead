@@ -1,6 +1,6 @@
 <template>
   <article>
-    <h2 :id="`${title}-heading`" class="my-4">
+    <h2 :id="`${title}-heading`" class="mt-8 mb-4">
       <a
         :href="titleUrl || `#${title}-heading`"
         :target="titleUrl ? '_blank' : ''"
