@@ -2,18 +2,26 @@
   <div class="header-wrapper flex justify-center py-5 mb-4">
     <header class="container max-w-screen-lg flex justify-between">
       <div class="header-left">
-        <a href="/">Aaron Mead</a>
+        <nuxt-link to="/">
+          Aaron Mead
+        </nuxt-link>
       </div>
       <nav>
         <ul class="flex">
           <li class="mr-6">
-            <a href="/#about">About</a>
+            <nuxt-link to="/">
+              Home
+            </nuxt-link>
           </li>
           <li class="mr-6">
-            <a href="/work">Work</a>
+            <nuxt-link to="/work">
+              My Work
+            </nuxt-link>
           </li>
           <li>
-            <a href="/blog">Blog</a>
+            <nuxt-link to="/blog">
+              Blog
+            </nuxt-link>
           </li>
         </ul>
       </nav>
@@ -59,6 +67,9 @@ a:hover {
 }
 nav a {
   @apply underline;
+}
+nav a.nuxt-link-exact-active {
+  @apply no-underline
 }
 .sloth-container {
   height: 60px;

@@ -7,15 +7,15 @@
       </h1>
       <div class="intro-container flex flex-wrap">
         <div class="w-full md:pr-4 md:w-1/2">
-          <p>
+          <div>
             I'm a senior software engineer based in North Carolina.
             I've spent most of my career in the tech industry, largely working at startups.
             Javascript is fun to hate on, but I enjoy writing it and has been a big part of my livelihood for 8 years now.
             Lately I've been working on frontend architecture, specifically with an enterprise Vue.js application.
-          </p>
+          </div>
         </div>
         <div class="w-full md:pl-4 md:w-1/2">
-          <p>
+          <div>
             When I'm not writing code or working on a side-project, I typically spend my time:
             <ul class="bulleted">
               <li>With my family and friends.</li>
@@ -23,7 +23,7 @@
               <li>Watching and consuming content about anything basketball (especially NBA!)</li>
               <li>When I'm not focusing on a project, binge playing some video games (especially <a href="https://na.leagueoflegends.com/en-us/" target="_blank">LEAGUE!</a>)</li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
       <div class="social-links flex items-center justify-start">
