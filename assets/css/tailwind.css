@@ -24,6 +24,13 @@ h3 {
   @apply text-2xl font-medium
 }
 
+.title {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  color: #35495e;
+  letter-spacing: 1px;
+}
+
 .bulleted li:before {
   content: "•";
   padding-right: 4px;

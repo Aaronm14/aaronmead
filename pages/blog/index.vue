@@ -1,8 +1,10 @@
 <template>
   <div>
     <Header />
-    <div class="container">
-      <h1>Blog Posts</h1>
+    <div class="container max-w-screen-lg">
+      <h1 class="title text-5xl mb-2">
+        Blog Posts
+      </h1>
       <ul>
         <li v-for="article of articles" :key="article.slug">
           <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">

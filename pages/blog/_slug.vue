@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <div class="container">
+    <div class="container max-w-screen-lg">
       <article>
         <nav>
           <p class="text-sm font-bold">
