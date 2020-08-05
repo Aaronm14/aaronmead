@@ -3,7 +3,7 @@
     <Header />
     <div class="container max-w-screen-lg">
       <h1 class="title text-5xl mb-2">
-        Blog Posts
+        Blog Postsy
       </h1>
       <ul>
         <li v-for="article of articles" :key="article.slug">
@@ -25,6 +25,7 @@
 export default {
   async asyncData ({ $content, params }) {
     const articles = await $content('articles', params.slug)
+      .where({ publish: true })
       .only(['title', 'description', 'img', 'slug', 'author'])
       .sortBy('createdAt', 'asc')
       .fetch()

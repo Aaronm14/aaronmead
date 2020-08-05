@@ -4,6 +4,7 @@ author:
     name: Aaron
     bio: Aaron's bio
     image: https://source.unsplash.com/random/?person
+publish: true
 ---
 
 # My third blog post

@@ -38,6 +38,7 @@ export default {
     // Shortcut to view in dev: http://localhost:3000/_content/articles
     const article = await $content('articles', params.slug).fetch()
     const [prev, next] = await $content('articles')
+      .where({ publish: true })
       .only(['title', 'slug'])
       .sortBy('createdAt', 'asc')
       .surround(params.slug)
